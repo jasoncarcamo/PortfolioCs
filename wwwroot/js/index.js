@@ -20,9 +20,15 @@ function redirect() {
 function learnMore() {
     const button = document.getElementById("learn-more");
 
-    button.addEventListener("click", (e) => {
-        window.location.href = "https://jasoncarcamo.github.io/my-portfolio/about.html"
-    })
+    if (!button) {
+        return;
+    }
+
+    if (button) {
+        button.addEventListener("click", (e) => {
+            window.location.href = "https://jasoncarcamo.github.io/my-portfolio/about.html"
+        });
+    };
 }
 
 function animateTitle() {

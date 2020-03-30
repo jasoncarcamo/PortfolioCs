@@ -55,12 +55,12 @@
 #learn-more {
     display: block;
     opacity: 0;
-    width: 6.5em;
-    height: 3em;
     position: absolute;
+    width: 7em;
+    height: 3em;
     top: 55%;
     left: 50%;
-    padding: .6em;
+    padding: .5em .8em;
     transform: translate(-50%, 50%);
     font-size: 1em;
     border-radius: .5em;
@@ -121,43 +121,22 @@
     }
 
 
-        #home-section h4 {
-            position: absolute;
-            text-align: center;
-            top: 19%;
-            left: 50%;
-            transform: translate(-50%, 37%);
-        }
-
-        #home-section > button {
-            display: block;
-            width: 7.5em;
-            height: 3.5em;
-            position: absolute;
-            top: 45%;
-            left: 50%;
-            transform: translate(-50%, 50%);
-            border-radius: .5em;
-            cursor: pointer;
-        }
-
-    #nav-links {
-        display: none;
+    #home-section h4 {
         position: absolute;
-        z-index: 2;
-        top: .04em;
-        left: 0;
-        height: 100vh;
-        width: 100%;
-        margin: 0;
-        padding: 0;
-        flex-direction: column;
+        text-align: center;
+        top: 19%;
+        left: 50%;
+        transform: translate(-50%, 37%);
     }
 
-    .display-links {
-        display: flex !important;
-        animation-name: navlinks !important;
-        animation-duration: 1.2s !important;
+    #learn-more{
+        display: block;
+        position: absolute;
+        top: 45%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+        border-radius: .5em;
+        cursor: pointer;
     }
 
     #landing-page-icons-container {
@@ -203,59 +182,13 @@
         width: 100%;
         margin: 0;
     }
+
 }
 
 
 @media screen and (max-width: 770px) and (min-height: 451px){
 
     /*This begins the mobile nav header for tablets and mobile phones*/
-    #nav-burger {
-        display: block;
-        position: relative;
-        top: .5em;
-        right: 1em;
-        z-index: 3;
-    }
-
-    .hide-menu-burger {
-        display: none !important;
-    }
-
-    #close-burger-menu {
-        display: none;
-        position: relative;
-        top: .5em;
-        right: .5em;
-        z-index: 3;
-        font-size: 2em;
-        padding: 0;
-    }
-
-    .show-close-menu {
-        display: block !important;
-    }
-
-    #nav-burger div {
-        background-color: white;
-        margin: .2em 0;
-        width: 1.5em;
-        height: .2em;
-    }
-
-    header {
-        justify-content: space-between;
-        height: 3.5em;
-    }
-
-    header > h1 {
-        margin: auto 0;
-    }
-
-    header > h1 > a {
-        margin-left: 1em;
-        color: white;
-    }
-
     #title-container{
         top: 15%;
     }
@@ -278,10 +211,8 @@
         transform: translate(-50%, 37%);
     }
 
-    #home-section > button {
+    #learn-more {
         display: block;
-        width: 7.5em;
-        height: 3.5em;
         position: absolute;
         top: 45%;
         left: 50%;
