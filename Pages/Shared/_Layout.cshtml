@@ -1,31 +1,59 @@
 ﻿<!DOCTYPE html>
 <html lang="en">
 <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-149441352-1"></script>
+    <script async>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-149441352-1');
+    </script>
+
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>@ViewData["Title"] - PortfolioCs</title>
+    <title>@ViewData["Title"] - Full Stack Web Developer</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <link href="~/css/index.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/about.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/projects.css" rel="stylesheet" type="text/css" />
+    <link href="~/css/skills.css" rel="stylesheet" type="text/css" />
+    <script src="https://kit.fontawesome.com/6f089298a1.js"></script>
+    <script src="~/js/index.js" async></script>
 </head>
 <body>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container">
-                <a class="navbar-brand" asp-area="" asp-page="/Index">PortfolioCs</a>
+                <a class="navbar-brand" asp-area="" asp-page="/Index">Jason Carcamo</a>
+
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".navbar-collapse" aria-controls="navbarSupportedContent"
                         aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="navbar-collapse collapse d-sm-inline-flex flex-sm-row-reverse">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Index">Home</a>
                         </li>
+
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
+                            <a class="nav-link text-dark" asp-area="" asp-page="/About">About</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Projects">Projects</a>
+                        </li>
+
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" asp-area="" asp-page="/Skills">Skills</a>
                         </li>
                     </ul>
                 </div>
+
             </div>
         </nav>
     </header>
@@ -35,8 +63,12 @@
     </main>
 
     <footer class="border-top footer text-muted">
-        <div class="container">
-            &copy; 2020 - PortfolioCs - <a asp-area="" asp-page="/Privacy">Privacy</a>
+        <div class='contact-icons'>
+            <a href='https://github.com/jasoncarcamo?tab=repositories' target='blank' aria-label="to github profile"><i class="fab fa-github"></i></a>
+
+            <a href='https://www.linkedin.com/in/jason-carcamo-78217717b/' target="blank" aria-label="to linked in profile"><i class="fab fa-linkedin"></i></a>
+
+            <a href='mailto:jasoncarcamo30@yahoo.com' aria-label="email jason here"><i class="fas fa-envelope"></i></a>
         </div>
     </footer>
 

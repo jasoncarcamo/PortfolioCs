@@ -1,10 +1,44 @@
 ﻿@page
 @model IndexModel
 @{
-    ViewData["Title"] = "Home page";
+    ViewData["Title"] = "Jason Carcamo";
 }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://docs.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+<section id="home-section">
+    <section id="title-container">
+        <h2 class="Full">Full</h2>
+        <h2 class="Stack">Stack</h2>
+        <h2 class="Web">Web</h2>
+        <h2 class="Developer">Developer</h2>
+    </section>
+
+    <h4>
+        "Determined, Curious, Hard Working and have an eye for detail."
+    </h4>
+
+    <a id="learn-more" asp-area="" asp-page="/About">
+        Learn more
+    </a>
+
+    <section id="landing-page-icons-container">
+        <img class="landing-page-icons" src="~/icons/html5icon.svg" alt="Html 5 icon" />
+
+        <img class="landing-page-icons" src="~/icons/css3icon.svg" alt="Css 3 icon" />
+
+        <img class="landing-page-icons" src="~/icons/javascripticon.svg" alt="JavaScript icon" />
+
+        <img class="landing-page-icons" src="~/icons/phpicon.svg" alt="PHP icon" />
+
+        <img class="landing-page-icons" src="~/icons/reacticon.svg" alt="React icon" />
+
+        <img class="landing-page-icons" src="~/icons/laravelicon.svg" alt="Laravel icon" style="background-color: white;"/>
+
+        <img class="landing-page-icons" src="~/icons/expressicon.svg" alt="Express.js icon" />
+
+        <img class="landing-page-icons" src="~/icons/nodeicon.svg" alt="Node icon" />
+
+        <img class="landing-page-icons" src="~/icons/postgresqlicon.svg" alt="Postgresql icon" />
+
+        <img class="landing-page-icons" src="~/icons/mysqlicon.svg" alt="Sql icon" />
+    </section>
+</section>
