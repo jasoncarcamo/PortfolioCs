@@ -1,11 +1,151 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿
 
-namespace PortfolioCs.wwwroot.css
-{
-    public class skills
-    {
+/* Page unique style begins here*/
+#skills-section {
+    display: block;
+    flex-direction: column;
+    width: 94%;
+    position: absolute;
+    top: 28%;
+    left: 03%;
+}
+
+.hide-skill-section {
+    display: none !important;
+}
+
+#skills-section * {
+    text-align: center;
+}
+
+#skills-section > p {
+    width: 6.2em;
+    margin: 0 auto;
+    font-size: 1.22em;
+    cursor: pointer;
+    border: .1em solid black;
+    border-radius: .5em;
+    border: .08em solid white;
+    cursor: pointer;
+    background: #b60002;
+    color: white;
+    padding: .6em;
+}
+
+    #skills-section > p:hover {
+        background-color: white;
+        color: #b60002;
     }
+
+#skills-section p:nth-child(2) {
+    margin: 4em auto !important;
+}
+
+#frontend-skills {
+    display: none;
+    padding: 2em 0;
+    flex-direction: column;
+    width: 78%;
+    position: absolute;
+    top: 23%;
+    left: 11%;
+}
+
+    #frontend-skills * {
+        text-align: center;
+    }
+
+    #frontend-skills p {
+        margin: .9em auto;
+        width: 70%;
+        font-size: 1.22em;
+    }
+
+        #frontend-skills p:nth-child(1) {
+            margin-top: 0 !important;
+        }
+
+.close-skills {
+    position: absolute;
+    font-size: 2em;
+    top: -.05em;
+    left: 0;
+    padding: 0;
+    width: .5em;
+    height: .5em;
+    cursor: pointer;
+}
+
+.show-skill {
+    display: block !important;
+}
+
+.close-skills * {
+    padding: 0;
+    margin: 0;
+}
+
+#backend-skills {
+    display: none;
+    padding: 2em 0;
+    flex-direction: column;
+    width: 78%;
+    position: absolute;
+    top: 23%;
+    left: 11%;
+}
+
+    #backend-skills * {
+        text-align: center;
+    }
+
+    #backend-skills p {
+        width: 70%;
+        margin: 1em auto;
+        font-size: 1.22em;
+    }
+
+
+        #backend-skills p:nth-child(1) {
+            margin-top: 0 !important;
+        }
+
+#development-tools {
+    display: none;
+    padding: 2em 0;
+    flex-direction: column;
+    width: 78%;
+    position: absolute;
+    top: 23%;
+    left: 11%;
+}
+
+    #development-tools * {
+        text-align: center;
+    }
+
+    #development-tools p {
+        width: 70%;
+        margin: 1em auto;
+        font-size: 1.22em;
+    }
+
+        #development-tools p:nth-child(1) {
+            margin-top: 0 !important;
+        }
+
+        #development-tools p:last-child {
+            margin-bottom: 4em !important;
+        }
+
+.contact-icons a:nth-child(1) {
+    color: black !important;
+}
+
+.contact-icons a:nth-child(2) {
+    color: #2867B2 !important;
+}
+
+.contact-icons a:nth-child(3) {
+    color: rgb(26, 175, 138) !important;
 }
