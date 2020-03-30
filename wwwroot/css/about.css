@@ -1,11 +1,34 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
+﻿#about-section {
+    width: 94%;
+    height: 12em;
+    padding: 3em 0 2.5em 0;
+    border-radius: 1em;
+    position: absolute;
+    top: 23%;
+    left: 03%;
+    margin-bottom: 5.5em;
+}
 
-namespace PortfolioCs.wwwroot.css
-{
-    public class about
-    {
+#about-section * {
+    text-align: center;
+}
+
+#about-section p {
+    display: block;
+    width: 70%;
+    margin: 0 auto;
+}
+
+#about-section p:nth-child(2) {
+    margin-top: 2em !important;
+}
+
+/*This begins mobile view */
+@media screen and (max-width: 770px) {
+
+    #about-section {
+        top: 23%;
+        height: 24em;
+        padding: 3em 0 4.5em 0;
     }
 }
